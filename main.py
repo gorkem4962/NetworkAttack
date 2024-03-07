@@ -19,7 +19,7 @@ def printDetails(ip):
     print(f"Location: {res.city}, {res.region}, {res.country}")
     print(f"Coordinates: (Lat: {res.latitude}, Lng: {res.longitude})")
 
-def UDP
+
 
 
 class Network(object):
@@ -53,6 +53,8 @@ gw = netifaces.gateways()
 pos_of_public = [netifaces.AF_INET][0] # portnumber of public IP 
 Pub_IP_Router = gw['default'][pos_of_public][0] 
 send_UDP(5000,Pub_IP_Router,"Hello World!",1,My_IP_Adress)
+
+printDetails('35.207.106.188')
 
 
 
