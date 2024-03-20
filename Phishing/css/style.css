@@ -9,7 +9,7 @@
 :root {
     --cl-white: #fafafa;
     --cl-gray-dark: #868585;
-    --bg-blue: #63c7e6;
+    --bg-blue: #1fa7f0;
     --cl-gray-light: #dbdbdb;
     --bg-white: #ffffff;
 }
@@ -73,19 +73,23 @@ body {
     border-radius: 4px;
     width: 280px;
 }
-.form-area form input[type=email], form input[type=password] {
+.form-area form input[type=text], form input[type=password] {
     padding: 13px 0 13px 4px;
     margin-bottom: 5px;
     border: 1px solid var(--cl-gray-light);
     background-color: var(--cl-white);
-    font-size: 11px;
+    font-size: 12px;
 }
 .form-area form input[type=submit] {
-    padding: 5px 10px;
-    margin-top: 10px;
+    padding: 10px 10px;
+    margin-top: 5px;
     color: var(--bg-white);
-    background-color: #8cd6ec;
+    background-color:rgb(74, 161, 248);
     font-weight: 500;
+    border-radius: 8px;
+    font-weight: bold ;
+    font-size: 13px;
+    
 }
 .form-area form input[type=submit]:hover { 
     background-color: var(--bg-blue);
@@ -153,15 +157,17 @@ form .options .forget a {
 /* FOOTER */
 footer {
     text-align: center;
-    margin: 0 10px;
-    font-size: 14px;
+    margin: 100px 20px;
+    font-size: 12px;
 }
 footer a {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--cl-gray-dark);
     margin: 5px 4px;
 }
-footer .footer-content { margin-bottom: 5px; }
+footer .footer-content {
+     margin-bottom: 10px; 
+}
 footer .copyright {
     margin-top: 20px;
 }
