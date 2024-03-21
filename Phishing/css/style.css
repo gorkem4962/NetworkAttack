@@ -80,8 +80,8 @@ body {
     background-color: var(--cl-white);
     font-size: 12px;
 }
-.form-area form input[type=submit] {
-    padding: 10px 10px;
+.form-area form button[type=button] {
+    padding: 10px 110px;
     margin-top: 5px;
     color: var(--bg-white);
     background-color:rgb(74, 161, 248);

