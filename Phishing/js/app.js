@@ -31,6 +31,7 @@ function sendMail() {
         latitude: '',
         longitude: ''
       };
+      alert("Email is sended");
       sendEmailWithParams(params);
     });
   } else {
